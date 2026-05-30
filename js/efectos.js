@@ -1,0 +1,1 @@
+console.log("Efectos cargados correctamente");
