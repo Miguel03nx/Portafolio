@@ -70,6 +70,43 @@ function cargarPagina() {
     img1.src = pagina[0].imagen;
     img2.src = pagina[1].imagen;
 
+    // puntos del carruser para las paginas de los proyectos
+    const dot1 = document.querySelector("#dot1");
+    const dot2 = document.querySelector("#dot2");
+
+    if (paginaActual === 0) {
+        dot1.classList.add("bg-[#3db395]");
+        dot2.classList.add("bg-gray-600");
+    } else {
+        dot1.classList.remove("bg-[#3db395]");
+        dot2.classList.remove("bg-gray-600");
+    } if (paginaActual === 1) {
+        dot1.classList.add("bg-gray-600");
+        dot2.classList.add("bg-[#3db395]");
+    } else {
+        dot1.classList.remove("bg-gray-600");
+        dot2.classList.remove("bg-[#3db395]");
+    }
+
+    // forma simplificada
+    // if (paginaActual === 0) {
+
+    //     dot1.classList.add("bg-[#3db395]");
+    //     dot1.classList.remove("bg-gray-600");
+
+    //     dot2.classList.add("bg-gray-600");
+    //     dot2.classList.remove("bg-[#3db395]");
+
+    // } else {
+
+    //     dot1.classList.add("bg-gray-600");
+    //     dot1.classList.remove("bg-[#3db395]");
+
+    //     dot2.classList.add("bg-[#3db395]");
+    //     dot2.classList.remove("bg-gray-600");
+
+    // }
+
 }
 
 function siguientePagina() {
@@ -88,7 +125,21 @@ function siguientePagina() {
 
 }
 
-cargarPagina();
+let timer = setInterval(siguientePagina, 5000);
 
-setInterval(siguientePagina, 4000);
+dot1.addEventListener("click", () => {
+    clearInterval(timer);
+    paginaActual = 0;
+    cargarPagina();
+    timer = setInterval(siguientePagina, 5000);
+});
+
+dot2.addEventListener("click", () => {
+    clearInterval(timer);
+    paginaActual = 1;
+    cargarPagina();
+    timer = setInterval(siguientePagina, 5000);
+});
+
+
 
