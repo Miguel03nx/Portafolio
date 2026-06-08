@@ -18,8 +18,8 @@ const paginas = [
             },
 
             {
-                nombre: "App de citas",
-                descripcion: "Landing page responsive",
+                nombre: "app de citas",
+                descripcion: "link del proyecto",
                 imagen: "media/avatar1.png",
                 link: "#"
             }

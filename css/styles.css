@@ -16,7 +16,12 @@
     display: flex;
     overflow-x: auto;
     width: 100%;
+    /* cursor: grab; */
 }
+
+/* .carousel:active{
+    cursor: grabbing;
+} */
 
 .card {
     flex: 0 0 9em;
@@ -29,6 +34,10 @@
 .group{
     animation: spin 10s infinite linear;
     padding-right: 1em;
+}
+
+.carousel:hover .group{
+    animation-play-state: paused;
 }
 
 @keyframes spin {
