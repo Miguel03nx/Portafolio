@@ -144,29 +144,28 @@ dot2.addEventListener("click", () => {
 
 // animacion de las estrellas
 
-moverEstrella(document.querySelector(".sparkle"));
+// moverEstrella(document.querySelector(".sparkle"));
+// const estrella = document.querySelector(".sparkle");
 const estrellas = document.querySelectorAll(".sparkle");
-const estrella = document.querySelector(".sparkle");
 
-const estrella = estrellas[i];
 
-function moverEstrella(estrella) {
-
+function moverEstrella(estrellas) {
+    
     const x = Math.random() * 100;
     const y = Math.random() * 100;
-
-    estrella.style.left = `${x}%`;
-    estrella.style.top = `${y}%`;
-
+    
+    estrellas.style.left = `${x}%`;
+    estrellas.style.top = `${y}%`;
+    
 }
 
 for (let i = 0; i < estrellas.length; i++){
-    moverEstrella(estrellas);
+    const estrella = estrellas[i];
+    moverEstrella(estrella);
+    
+    estrella.addEventListener("animationiteration", () => {
+        moverEstrella(estrella);
+    });
   }  
-
-estrella.addEventListener("animationiteration", () => {
-
-        
-      });
 
 // console.log(estrellas);

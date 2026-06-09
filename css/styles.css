@@ -1,16 +1,21 @@
-/* @keyframes carousel {
-    0% {
-        transform: translateX(0);
-    }
+/* efectos de las diferentes secciones del portafolio
+*/
 
-    100% {
-        transform: translateX(-50%);
-    }
+.infpersonal{
+    box-shadow: 0px 0px 30px rgba(9, 183, 196, 0.4);
 }
 
-.animate-carousel {
-    animation: carousel 15s linear infinite;
-} */
+.card1{
+    box-shadow: 0px 0px 30px rgba(9, 183, 196, 0.4);
+}
+
+.card2{
+    box-shadow: 0px 0px 30px rgba(9, 183, 196, 0.4);
+}
+
+.infpersonal:hover{
+    box-shadow: 0px 0px 30px rgba(9, 183, 196, 0.7);
+}
 
 .carousel {
     display: flex;
@@ -126,6 +131,20 @@
     left: 20%;
     animation-duration: 2s;
     animation-delay: .5s;;
+}
+
+.sparkle9{
+    top: 60%;
+    left: 80%;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+}
+
+.sparkle10{
+    top: 80%;
+    left: 20%;
+    animation-duration: 3s;
+    animation-delay: 2s;
 }
 
 
