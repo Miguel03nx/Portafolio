@@ -11,33 +11,33 @@ const link2 = document.querySelector("#link2");
 const paginas = [
         [
             {
-                nombre: "Blog Café",
-                descripcion: "HTML, CSS, SASS y JavaScript",
-                imagen: "media/blog-cafe.png",
-                link: "https://blogcafepracticasp.netlify.app"
+                nombre: "App citas",
+                descripcion: "HTML, tailwind y JavaScript",
+                imagen: "media/citas.png",
+                link: "https://citasveterinariacurso.netlify.app"
             },
 
             {
-                nombre: "app de citas",
-                descripcion: "link del proyecto",
-                imagen: "media/avatar1.png",
-                link: "#"
+                nombre: "Blog café",
+                descripcion: "HTML, CSS, SASS, JavaScript",
+                imagen: "media/blog-cafe.png",
+                link: "https://blogcafepracticasp.netlify.app"
             }
         ],
 
         [
             {
-                nombre: "Cloud Coffee",
-                descripcion: "PHP, MySQL y Tailwind",
-                imagen: "media/avatar1.png",
-                link: "#"
+                nombre: "Landing tienda",
+                descripcion: "HTML, CSS, SASS, JavaScript",
+                imagen: "media/tienda.png",
+                link: "https://fullstackweb-store.netlify.app"
             },
 
             {
-                nombre: "Pet Grooming",
-                descripcion: "Sistema de citas",
-                imagen: "media/blog-cafe.png",
-                link: "#"
+                nombre: "Landing festival",
+                descripcion: "HTML, CSS, SASS, JavaScript",
+                imagen: "media/festival.png",
+                link: "https://festivalrockedmmexico.netlify.app"
             }
         ]
 ];
