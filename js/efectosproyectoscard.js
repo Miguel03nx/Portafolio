@@ -11,33 +11,43 @@ const link2 = document.querySelector("#link2");
 const paginas = [
         [
             {
-                nombre: "App citas",
-                descripcion: "HTML, tailwind y JavaScript",
                 imagen: "media/citas.png",
                 link: "https://citasveterinariacurso.netlify.app"
+                // nombre: "App citas",
+                // descripcion: "HTML, tailwind y JavaScript",
             },
 
             {
-                nombre: "Blog café",
+                nombre: "APP DE CITAS",
                 descripcion: "HTML, CSS, SASS, JavaScript",
-                imagen: "media/blog-cafe.png",
                 link: "https://blogcafepracticasp.netlify.app"
+                // imagen: "media/blog-cafe.png",
+                // nombre: "Blog café",
+                // descripcion: "HTML, CSS, SASS, JavaScript",
+                // imagen: "media/blog-cafe.png",
+                // link: "https://blogcafepracticasp.netlify.app"
             }
         ],
 
         [
             {
-                nombre: "Landing tienda",
-                descripcion: "HTML, CSS, SASS, JavaScript",
                 imagen: "media/tienda.png",
                 link: "https://fullstackweb-store.netlify.app"
+                // nombre: "Landing tienda",
+                // descripcion: "HTML, CSS, SASS, JavaScript",
+                // imagen: "media/tienda.png",
+                // link: "https://fullstackweb-store.netlify.app"
             },
 
             {
-                nombre: "Landing festival",
+                 nombre: "Landing festival",
                 descripcion: "HTML, CSS, SASS, JavaScript",
-                imagen: "media/festival.png",
                 link: "https://festivalrockedmmexico.netlify.app"
+                // imagen: "media/blog-cafe.png",
+                // nombre: "Landing festival",
+                // descripcion: "HTML, CSS, SASS, JavaScript",
+                // imagen: "media/festival.png",
+                // link: "https://festivalrockedmmexico.netlify.app"
             }
         ]
 ];
