@@ -18,9 +18,9 @@ const paginas = [
             },
 
             {
-                nombre: "APP DE CITAS",
-                descripcion: "HTML, CSS, SASS, JavaScript",
-                link: "https://blogcafepracticasp.netlify.app"
+                nombre: "citas veterinaria",
+                descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                link: "https://citasveterinariacurso.netlify.app"
                 // imagen: "media/blog-cafe.png",
                 // nombre: "Blog café",
                 // descripcion: "HTML, CSS, SASS, JavaScript",
@@ -40,9 +40,9 @@ const paginas = [
             },
 
             {
-                nombre: "Landing festival",
-                descripcion: "HTML, CSS, SASS, JavaScript",
-                link: "https://festivalrockedmmexico.netlify.app"
+                nombre: "App store",
+                descripcion: "2Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                link: "https://fullstackweb-store.netlify.app"
                 // imagen: "media/blog-cafe.png",
                 // nombre: "Landing festival",
                 // descripcion: "HTML, CSS, SASS, JavaScript",
@@ -58,10 +58,10 @@ function cargarPagina() {
     const pagina = paginas[paginaActual];
 
     const imagen1 = document.querySelector("#img1");
-    // const nombre1 = document.querySelector("#nombre1");
+    const nombre1 = document.querySelector("#nombre1");
 
     imagen1.src = pagina[0].imagen;
-    // nombre1.textContent = pagina[0].nombre;
+    nombre1.textContent = pagina[1].nombre;
 
     // const descripcion1 = document.querySelector("#descripcion1");
     const descripcion2 = document.querySelector("#descripcion2");
@@ -70,9 +70,11 @@ function cargarPagina() {
     descripcion2.textContent = pagina[1].descripcion;
 
     // const link1 = document.querySelector("#link1");
+    const link3 = document.querySelector("#link3");
     const link2 = document.querySelector("#link2");
 
     // link1.href = pagina[0].link;
+    link3.href = pagina[0].link;
     link2.href = pagina[1].link;
 
     // const img1 = document.querySelector("#img1");
@@ -176,6 +178,6 @@ for (let i = 0; i < estrellas.length; i++){
     estrella.addEventListener("animationiteration", () => {
         moverEstrella(estrella);
     });
-  }  
+    }  
 
 // console.log(estrellas);
