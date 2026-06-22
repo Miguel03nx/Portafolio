@@ -50,6 +50,7 @@ const paginas = [
                 // link: "https://festivalrockedmmexico.netlify.app"
             }
         ]
+
 ];
 
 
@@ -62,6 +63,7 @@ function cargarPagina() {
 
     imagen1.src = pagina[0].imagen;
     nombre1.textContent = pagina[1].nombre;
+
 
     // const descripcion1 = document.querySelector("#descripcion1");
     const descripcion2 = document.querySelector("#descripcion2");
@@ -85,45 +87,33 @@ function cargarPagina() {
     // puntos del carruser para las paginas de los proyectos
     const dot1 = document.querySelector("#dot1");
     const dot2 = document.querySelector("#dot2");
+    const dot3 = document.querySelector("#dot3");
 
     if (paginaActual === 0) {
         dot1.classList.add("bg-[#3db395]");
         dot2.classList.add("bg-gray-600");
-    } else {
+        
+    } 
+    else {
         dot1.classList.remove("bg-[#3db395]");
         dot2.classList.remove("bg-gray-600");
-    } if (paginaActual === 1) {
+    } 
+    if (paginaActual === 1) {
         dot1.classList.add("bg-gray-600");
         dot2.classList.add("bg-[#3db395]");
-    } else {
+        
+    } 
+    else {
         dot1.classList.remove("bg-gray-600");
         dot2.classList.remove("bg-[#3db395]");
-    }
+    } 
 
-    // forma simplificada
-    // if (paginaActual === 0) {
-
-    //     dot1.classList.add("bg-[#3db395]");
-    //     dot1.classList.remove("bg-gray-600");
-
-    //     dot2.classList.add("bg-gray-600");
-    //     dot2.classList.remove("bg-[#3db395]");
-
-    // } else {
-
-    //     dot1.classList.add("bg-gray-600");
-    //     dot1.classList.remove("bg-[#3db395]");
-
-    //     dot2.classList.add("bg-[#3db395]");
-    //     dot2.classList.remove("bg-gray-600");
-
-    // }
 
 }
 
 function siguientePagina() {
 
-    if (paginaActual === 1) {
+    if (paginaActual === paginas.length - 1) {
 
         paginaActual = 0;
 
