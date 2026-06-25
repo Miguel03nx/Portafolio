@@ -49,9 +49,54 @@ const paginas = [
                 // imagen: "media/festival.png",
                 // link: "https://festivalrockedmmexico.netlify.app"
             }
+        ],
+
+        [
+            {
+                imagen: "media/festival.png",
+                link: "https://festivalrockedmmexico.netlify.app"
+                // nombre: "Landing tienda",
+                // descripcion: "HTML, CSS, SASS, JavaScript",
+                // imagen: "media/tienda.png",
+                // link: "https://fullstackweb-store.netlify.app"
+            },
+
+            {
+                nombre: "Festival rock",
+                descripcion: "3Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                link: "https://festivalrockedmmexico.netlify.app"
+                // imagen: "media/blog-cafe.png",
+                // nombre: "Landing festival",
+                // descripcion: "HTML, CSS, SASS, JavaScript",
+                // imagen: "media/festival.png",
+                // link: "https://festivalrockedmmexico.netlify.app"
+            }
+        ],
+
+        [
+            {
+                imagen: "media/blog-cafe.png",
+                link: "https://blogcafepracticasp.netlify.app"
+                // nombre: "Landing tienda",
+                // descripcion: "HTML, CSS, SASS, JavaScript",
+                // imagen: "media/tienda.png",
+                // link: "https://fullstackweb-store.netlify.app"
+            },
+
+            {
+                nombre: "Blog café",
+                descripcion: "4Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                link: "https://blogcafepracticasp.netlify.app"
+                // imagen: "media/blog-cafe.png",
+                // nombre: "Landing festival",
+                // descripcion: "HTML, CSS, SASS, JavaScript",
+                // imagen: "media/festival.png",
+                // link: "https://festivalrockedmmexico.netlify.app"
+            }
         ]
 
 ];
+
 
 
 function cargarPagina() {
@@ -85,29 +130,27 @@ function cargarPagina() {
     // img2.src = pagina[1].imagen;
 
     // puntos del carruser para las paginas de los proyectos
-    const dot1 = document.querySelector("#dot1");
-    const dot2 = document.querySelector("#dot2");
-    const dot3 = document.querySelector("#dot3");
+    // const dot1 = document.querySelector("#dot1");
+    // const dot2 = document.querySelector("#dot2");
+    // const dot3 = document.querySelector("#dot3");
+    // const dot4 = document.querySelector("#dot4");
 
-    if (paginaActual === 0) {
-        dot1.classList.add("bg-[#3db395]");
-        dot2.classList.add("bg-gray-600");
-        
-    } 
-    else {
-        dot1.classList.remove("bg-[#3db395]");
-        dot2.classList.remove("bg-gray-600");
-    } 
-    if (paginaActual === 1) {
-        dot1.classList.add("bg-gray-600");
-        dot2.classList.add("bg-[#3db395]");
-        
-    } 
-    else {
-        dot1.classList.remove("bg-gray-600");
-        dot2.classList.remove("bg-[#3db395]");
-    } 
+    const dots = document.querySelectorAll(".dot");
 
+    for (let i= 0; i<dots.length; i++){
+
+        const dot = dots[i];
+
+        dot.classList.remove("bg-[#3db395]");
+        dot.classList.add("bg-gray-600");
+        
+        
+    }
+    
+    const dotActivo = dots[paginaActual];
+
+    dotActivo.classList.remove("bg-gray-600");
+    dotActivo.classList.add("bg-[#3db395]");
 
 }
 
@@ -142,6 +185,24 @@ dot2.addEventListener("click", () => {
     cargarPagina();
     timer = setInterval(siguientePagina, 5000);
 });
+
+dot3.addEventListener("click", () => {
+    clearInterval(timer);
+    paginaActual = 2;
+    cargarPagina();
+    timer = setInterval(siguientePagina, 5000);
+});
+
+dot4.addEventListener("click", () => {
+    clearInterval(timer);
+    paginaActual = 3;
+    cargarPagina();
+    timer = setInterval(siguientePagina, 5000);
+});
+
+
+
+
 
 
 // animacion de las estrellas
