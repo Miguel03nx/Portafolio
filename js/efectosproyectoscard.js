@@ -8,6 +8,8 @@ const nombre2 = document.querySelector("#nombre2");
 const descripcion2 = document.querySelector("#descripcion2");
 const link2 = document.querySelector("#link2");
 
+const imgtech = document.querySelector("#techno");
+
 const paginas = [
         [
             {
@@ -19,13 +21,14 @@ const paginas = [
 
             {
                 nombre: "citas veterinaria",
-                descripcion: "Aplicación web para citas veterinarias. Permite registrar, editar y eliminar información de cada mascota mediante una interfaz intuitiva",
-                link: "https://citasveterinariacurso.netlify.app"
+                descripcion: "Sistema de gestión para clínicas veterinarias que permite administrar pacientes y citas mediante operaciones CRUD en una interfaz dinámica y fácil de usar.",
+                link: "https://citasveterinariacurso.netlify.app",
                 // imagen: "media/blog-cafe.png",
                 // nombre: "Blog café",
                 // descripcion: "HTML, CSS, SASS, JavaScript",
                 // imagen: "media/blog-cafe.png",
                 // link: "https://blogcafepracticasp.netlify.app"
+                imagen2: "media/tailwind.png"
             }
         ],
 
@@ -42,12 +45,13 @@ const paginas = [
             {
                 nombre: "App store",
                 descripcion: "Landing page desarrollada para practicar diseño responsive y maquetación web, enfocada en la presentación de productos con una interfaz moderna y organizada.",
-                link: "https://fullstackweb-store.netlify.app"
+                link: "https://fullstackweb-store.netlify.app",
                 // imagen: "media/blog-cafe.png",
                 // nombre: "Landing festival",
                 // descripcion: "HTML, CSS, SASS, JavaScript",
                 // imagen: "media/festival.png",
                 // link: "https://festivalrockedmmexico.netlify.app"
+                imagen2: "media/css.png"
             }
         ],
 
@@ -64,12 +68,13 @@ const paginas = [
             {
                 nombre: "Festival rock",
                 descripcion: "Landing page para un festival de música. Desarrollada para reforzar habilidades con SASS y JavaScript, creando una experiencia visual moderna, responsive y atractiva.",
-                link: "https://festivalrockedmmexico.netlify.app"
+                link: "https://festivalrockedmmexico.netlify.app",
                 // imagen: "media/blog-cafe.png",
                 // nombre: "Landing festival",
                 // descripcion: "HTML, CSS, SASS, JavaScript",
                 // imagen: "media/festival.png",
                 // link: "https://festivalrockedmmexico.netlify.app"
+                imagen2: "media/sass.png"
             }
         ],
 
@@ -86,12 +91,13 @@ const paginas = [
             {
                 nombre: "Blog de café",
                 descripcion: "Blog informativo sobre café incluye formularios interactivos para practicar maquetación, validación de entradas y diseño responsive utilizando SASS y JavaScript.",
-                link: "https://blogcafepracticasp.netlify.app"
+                link: "https://blogcafepracticasp.netlify.app",
                 // imagen: "media/blog-cafe.png",
                 // nombre: "Landing festival",
                 // descripcion: "HTML, CSS, SASS, JavaScript",
                 // imagen: "media/festival.png",
                 // link: "https://festivalrockedmmexico.netlify.app"
+                imagen2: "media/sass.png"
             }
         ]
 
@@ -108,6 +114,7 @@ function cargarPagina() {
 
     imagen1.src = pagina[0].imagen;
     nombre1.textContent = pagina[1].nombre;
+    imgtech.src = pagina[1].imagen2;
 
 
     // const descripcion1 = document.querySelector("#descripcion1");
