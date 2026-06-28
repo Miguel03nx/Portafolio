@@ -19,7 +19,7 @@ const paginas = [
 
             {
                 nombre: "citas veterinaria",
-                descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                descripcion: "Aplicación web para citas veterinarias. Permite registrar, editar y eliminar información de cada mascota mediante una interfaz intuitiva",
                 link: "https://citasveterinariacurso.netlify.app"
                 // imagen: "media/blog-cafe.png",
                 // nombre: "Blog café",
@@ -41,7 +41,7 @@ const paginas = [
 
             {
                 nombre: "App store",
-                descripcion: "2Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                descripcion: "Landing page desarrollada para practicar diseño responsive y maquetación web, enfocada en la presentación de productos con una interfaz moderna y organizada.",
                 link: "https://fullstackweb-store.netlify.app"
                 // imagen: "media/blog-cafe.png",
                 // nombre: "Landing festival",
@@ -63,7 +63,7 @@ const paginas = [
 
             {
                 nombre: "Festival rock",
-                descripcion: "3Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                descripcion: "Landing page para un festival de música. Desarrollada para reforzar habilidades con SASS y JavaScript, creando una experiencia visual moderna, responsive y atractiva.",
                 link: "https://festivalrockedmmexico.netlify.app"
                 // imagen: "media/blog-cafe.png",
                 // nombre: "Landing festival",
@@ -84,8 +84,8 @@ const paginas = [
             },
 
             {
-                nombre: "Blog café",
-                descripcion: "4Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                nombre: "Blog de café",
+                descripcion: "Blog informativo sobre café incluye formularios interactivos para practicar maquetación, validación de entradas y diseño responsive utilizando SASS y JavaScript.",
                 link: "https://blogcafepracticasp.netlify.app"
                 // imagen: "media/blog-cafe.png",
                 // nombre: "Landing festival",
