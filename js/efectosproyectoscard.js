@@ -99,7 +99,30 @@ const paginas = [
                 // link: "https://festivalrockedmmexico.netlify.app"
                 imagen2: "media/sass.png"
             }
-        ]
+        ],
+
+        [
+            {
+                imagen: "media/api-clima.png",
+                link: "https://time-api-pract.netlify.app"
+                // nombre: "Landing tienda",
+                // descripcion: "HTML, CSS, SASS, JavaScript",
+                // imagen: "media/tienda.png",
+                // link: "https://fullstackweb-store.netlify.app"
+            },
+
+            {
+                nombre: "app del clima",
+                descripcion: "Aplicación web para consultar el clima en tiempo real. Desarrollada con HTML, tailwind CSS y JavaScript.",
+                link: "https://time-api-pract.netlify.app",
+                // imagen: "media/api-clima.png",
+                // nombre: "Landing festival",
+                // descripcion: "HTML, CSS, SASS, JavaScript",
+                // imagen: "media/festival.png",
+                // link: "https://festivalrockedmmexico.netlify.app"
+                imagen2: "media/tailwind.png"
+            }
+        ],
 
 ];
 
@@ -203,6 +226,13 @@ dot3.addEventListener("click", () => {
 dot4.addEventListener("click", () => {
     clearInterval(timer);
     paginaActual = 3;
+    cargarPagina();
+    timer = setInterval(siguientePagina, 5000);
+});
+
+dot5.addEventListener("click", () => {
+    clearInterval(timer);
+    paginaActual = 4;
     cargarPagina();
     timer = setInterval(siguientePagina, 5000);
 });
