@@ -13,6 +13,27 @@ const imgtech = document.querySelector("#techno");
 const paginas = [
         [
             {
+                imagen: "media/recetas.png",
+                link: "https://recetaspractica.netlify.app"
+                // nombre: "App citas",
+                // descripcion: "HTML, tailwind y JavaScript",
+            },
+
+            {
+                nombre: "Buscador de recetas",
+                descripcion: "Aplicación web para descubrir recetas de cocina mediante una API. Permite visualizar ingredientes, instrucciones y guardar recetas favoritas utilizando LocalStorage para mejorar la experiencia del usuario.",
+                link: "https://recetaspractica.netlify.app",
+                // imagen: "media/blog-cafe.png",
+                // nombre: "Blog café",
+                // descripcion: "HTML, CSS, SASS, JavaScript",
+                // imagen: "media/blog-cafe.png",
+                // link: "https://blogcafepracticasp.netlify.app"
+                imagen2: "media/tailwind.png"
+            }
+        ],
+
+        [
+            {
                 imagen: "media/citas.png",
                 link: "https://citasveterinariacurso.netlify.app"
                 // nombre: "App citas",
@@ -20,7 +41,7 @@ const paginas = [
             },
 
             {
-                nombre: "citas veterinaria",
+                nombre: "Citas veterinaria",
                 descripcion: "Sistema de gestión para clínicas veterinarias que permite administrar pacientes y citas mediante operaciones CRUD en una interfaz dinámica y fácil de usar.",
                 link: "https://citasveterinariacurso.netlify.app",
                 // imagen: "media/blog-cafe.png",
@@ -112,7 +133,7 @@ const paginas = [
             },
 
             {
-                nombre: "app del clima",
+                nombre: "App del clima",
                 descripcion: "Aplicación web para consultar el clima en tiempo real. Desarrollada con HTML, tailwind CSS y JavaScript.",
                 link: "https://time-api-pract.netlify.app",
                 // imagen: "media/api-clima.png",
@@ -233,6 +254,13 @@ dot4.addEventListener("click", () => {
 dot5.addEventListener("click", () => {
     clearInterval(timer);
     paginaActual = 4;
+    cargarPagina();
+    timer = setInterval(siguientePagina, 5000);
+});
+
+dot6.addEventListener("click", () => {
+    clearInterval(timer);
+    paginaActual = 5;
     cargarPagina();
     timer = setInterval(siguientePagina, 5000);
 });
